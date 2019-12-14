@@ -1,7 +1,7 @@
 import React from "react"
 
 const Circle = props => {
-  const { dimensions, backgroundColor, tabIndex } = props
+  const { dimensions, backgroundColor } = props
   return (
     <div
       style={{
@@ -10,7 +10,7 @@ const Circle = props => {
         backgroundColor,
         borderRadius: dimensions.diameter
       }}
-      tabIndex={tabIndex}
+      tabIndex="0"
       aria-label={`${backgroundColor} circle`}
     />
   )
