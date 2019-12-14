@@ -7,9 +7,8 @@ test("renders", () => {
 })
 
 test("renders a blue circle and a red circle but NOT a purple circle", () => {
-  const { debug, getByTestId, queryByTestId } = render(<App />)
-  debug()
-  expect(getByTestId("red circle")).toBeInTheDocument()
-  expect(getByTestId("blue circle")).toBeInTheDocument()
-  expect(queryByTestId("purple circle")).toBeNull()
+  const { getByLabelText, queryByLabelText } = render(<App />)
+  expect(getByLabelText("red circle")).toBeInTheDocument()
+  expect(getByLabelText("blue circle")).toBeInTheDocument()
+  expect(queryByLabelText("purple circle")).toBeNull()
 })
