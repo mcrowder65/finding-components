@@ -40,3 +40,5 @@ Your instructions are to
 // First, write an additional test that adds a timeout to the App component of 30 ms.
 // Second, in that test, assert that red and blue circles appear, and that there is no purple circle.
 ```
+
+You can find the link to the codesandbox in the video's notes
